@@ -309,24 +309,24 @@
                                     </p>
                                 </div>
                             </div>
-                            <div id="mail_box">
-                                <h1>Napisz do mnie</h1>
-                                <form action="pages/mail.php" method="POST">
-                                    <p>Imię i Nazwisko</p>
-                                    <input type="text" name="name" placeholder="Jan Kowalki">
-                                    <p>Email</p>
-                                    <input type="text" name="email" placeholder="Jan.Kowalski@gmail.com">
-                                    <p>Telefon</p>
-                                    <input type="text" name="phone" placeholder="+48 22 000 00 00">
-                                    <p>Wiadomość</p>
-                                    <textarea name="message" placeholder="Napisz do mnie"></textarea>
-                                    <br />
-                                    <input type="submit" value="Wyślij">
-                                    <input type="reset" value="Wyczyść">
-                                </form>
-                            </div>
-                            <div id="color_box">
-                            </div>
+                                <div id="mail_box">
+                                    <h1>Napisz do mnie</h1>
+                                    <form action="pages/mail.php" method="POST">
+                                        <p>Imię i Nazwisko</p>
+                                        <input type="text" name="name" placeholder="Jan Kowalki">
+                                        <p>Email</p>
+                                        <input type="text" name="email" placeholder="Jan.Kowalski@gmail.com">
+                                        <p>Telefon</p>
+                                        <input type="text" name="phone" placeholder="+48 22 000 00 00">
+                                        <p>Wiadomość</p>
+                                        <textarea name="message" placeholder="Napisz do mnie"></textarea>
+                                        <br />
+                                        <input type="submit" value="Wyślij">
+                                        <input type="reset" value="Wyczyść">
+                                    </form>
+                                </div>
+                                <div id="color_box">
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -348,13 +348,13 @@
     <script>
 
         var go = [];
-        go=[false,false];
-    
+        go = [false, false];
+
 
         $(window).scroll(function () {
             if ($("#start")[0].getBoundingClientRect().top < 0 && go[0] == false && go[1] == false && screen.width < 670) {
-                
-                
+
+
                 $("#bar").css({
                     position: "fixed",
                     height: $("#start")[0].getBoundingClientRect().bottom - 100,
@@ -384,9 +384,9 @@
                     }
                 });
 
-                setTimeout(function(){
+                setTimeout(function () {
                     go[1] = true;
-                },1000);
+                }, 1000);
                 go[0] = true;
             }
             if ($("#start")[0].getBoundingClientRect().top == 0 && go[0] == true && go[1] == true && screen.width < 670 && !$("#bars svg").hasClass("svg-inline--fa fa-sort-up fa-w-10")) {
@@ -414,11 +414,11 @@
                     height: '500px',
                 }, 300);
 
-                
-                setTimeout(function(){
+
+                setTimeout(function () {
                     go[0] = false;
-                },1000);
-                go[1]=false;
+                }, 1000);
+                go[1] = false;
 
 
             }

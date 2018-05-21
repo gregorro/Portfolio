@@ -11,7 +11,7 @@ label{display: block;}
 .new a{display: block; text-align: left; font-size: 1.5em; font-weight: 700; margin: 5px 0; text-decoration: none; width: fit-content;}
 .new a:hover{animation-name: hov; animation-duration: 500ms; animation-fill-mode: forwards;}
 
-.new2{background-color: unset; margin: 50px auto 0 auto;}
+.new2{background-color: unset; margin: 50px auto 0 auto; box-shadow: none;}
 .new2 a{display: block; text-align: center; font-size: 1.5em; font-weight: 700; margin: 5px auto; text-decoration: none; width: fit-content;}
 .new2 a:hover{animation-name: hov; animation-duration: 500ms; animation-fill-mode: forwards;}
 
@@ -40,7 +40,7 @@ form input[type*="submit"],form input[type*="reset"] {width: auto;}
 
 #contact{height: 600px; background-color: whitesmoke;}
 
-#color_box{position: absolute; background-color: orange; width: 500px; height: 420px; top: 50px; right: 140px; z-index: 1;}
+#color_box{position: absolute; background-color: orange; width: 450px; height: 400px; z-index: 1; display: block; top:100px; right: 10%;}
 
 #contact_box{width: 600px; margin: 50px auto 0 0; float: left; position: relative; display: none; z-index: 3; text-align: center;}
 #contact_box p{margin: 5px 0 0 15px;text-align: center; }
@@ -198,11 +198,11 @@ nav{height: 0;}
     #contact_box{width: 50%; }
     #mail_box{width: 50%;}
     .width{ width: auto; max-width: 1200px; min-width: 800px;}
-    #color_box{right: 5%; width: 50%;}
     form{margin-right: 10px;}
     .menu li{margin: 0 20px;}
     #projects img{height: 250px;}
     .text_box{font-size: 1em;}
+    #color_box{right: 3%;}
 
 }
 @media screen and (max-width: 1040px)
@@ -233,10 +233,11 @@ p,a {font-size: 0.75em;}
     #contact_box{display: block !important; float: none; margin: 0 auto; width: 80%;}
     #mail_box{display: block !important; float: none; margin: 40px auto 0 auto; }
     #contact{height: 850px;}
-    #color_box{top: 350px; right: 30%;}
     .width{width: 100%;max-width:  auto; min-width: auto;}
     .menu li{margin: 0 10px;}
     #contact_box h1{padding-top: 15px;}
+    #color_box{right: unset; top:440px; height: 350px; width: 380px; margin: 0 10% 0 10%;}
+    .end{height: 80px;}
 
 }
 
@@ -265,7 +266,6 @@ p,a {font-size: 0.75em;}
     .end{width: 85%;}
     #mail_box{width: 100%;}
     form{width: 80%;}
-    #color_box{top:362px; right: 40px; height: 330px; width: 80%;}
     #footer p{font-size: 60%;}
     #interests img{width: 100px;}
     #bars{display: block;}

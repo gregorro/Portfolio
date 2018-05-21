@@ -47,7 +47,7 @@ str = function () {
         modifier2 = 4;
         modifier = 75;
         modX = 20;
-        
+
 
     }
 
@@ -79,6 +79,7 @@ var time = 0;
 var om = 0.03;
 var con = 0;
 var step = 0;
+var val=[true,true];
 var int;
 var timer;
 var ilosc = null;
@@ -108,42 +109,61 @@ var one = function () {
 };
 
 $("#prev").click(function () {
-    if (ilosc != null) {
-        tabIdDiv[ilosc].animate({ left: 0 + 'px', opacity: '0' }, 1000);
-    }
-    if (document.getElementById("action").innerHTML == "Ukryj wszystkie")
-        run();
+    if (val[0] == true && val[1] == true) {
+        val=[false,false];
+        
+        if (ilosc != null) {
+            tabIdDiv[ilosc].animate({ left: 0 + 'px', opacity: '0' }, 1000);
+        }
+        if (document.getElementById("action").innerHTML == "Ukryj wszystkie")
+            run();
 
-    name = " img";
-    change();
-    $(tabIdDiv[i]).animate({ opacity: '1' }, 500);
-    name = " div";
-    change();
-    ile = ile - 1;
-    if (ile < 0)
-        ile = 7;
-    nr = ile;
-    value();
+        name = " img";
+        change();
+        $(tabIdDiv[i]).animate({ opacity: '1' }, 500);
+        name = " div";
+        change();
+        ile = ile - 1;
+        if (ile < 0)
+            ile = 7;
+        nr = ile;
+        value();
+
+        val[0]=true;
+        setTimeout(function(){
+            val[1]=true;      
+          },1000);
+    }
 });
 
 $("#next").click(function () {
-    if (ilosc != null) {
-        tabIdDiv[ilosc].animate({ left: 0 + 'px', opacity: '0' }, 1000);
-    }
-    if (document.getElementById("action").innerHTML == "Ukryj wszystkie")
-        run();
+    if (val[0] == true && val[1] == true) {
+        val=[false,false];
 
-    name = " img";
-    change();
-    $(tabIdDiv[i]).animate({ opacity: '1' }, 500);
-    name = " div";
-    change();
-    om = -om;
-    ile = ile + 1;
-    if (ile > 7)
-        ile = 0;
-    nr = ile;
-    value();
+        if (ilosc != null) {
+            tabIdDiv[ilosc].animate({ left: 0 + 'px', opacity: '0' }, 1000);
+        }
+        if (document.getElementById("action").innerHTML == "Ukryj wszystkie")
+            run();
+
+        name = " img";
+        change();
+        $(tabIdDiv[i]).animate({ opacity: '1' }, 500);
+        name = " div";
+        change();
+        om = -om;
+        ile = ile + 1;
+        if (ile > 7)
+            ile = 0;
+        nr = ile;
+        value();
+
+        val[0]=true;
+        setTimeout(function(){
+            val[1]=true;      
+          },1000);
+    }
+
 });
 
 
@@ -191,7 +211,7 @@ value = function () {
                         $(".mobile_skills_info").remove();
                         $('<div class="mobile_skills_info"/>').appendTo(".here");
                         $(tabId[ilosc]).clone().appendTo(".mobile_skills_info");
-                        $(".mobile_skills_info div div").css({ opacity: "1"});
+                        $(".mobile_skills_info div div").css({ opacity: "1" });
                     }
 
                     name = " img";
