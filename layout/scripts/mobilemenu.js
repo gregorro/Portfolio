@@ -28,6 +28,17 @@ function menu_activ() {
     });
 }
 
+function stp(){
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    })}
+
 
 function clo() {
   
@@ -63,6 +74,7 @@ function clo() {
         })
     }
 
+    
 
 
 }
@@ -77,6 +89,7 @@ $("#bars").click(function mobile_menu() {
         $('<form class="new" action="#"><div/></form>').appendTo("#mobile_menu");
 
         menu_activ();
+        stp();
 
         $("#bar").css({
             "z-index": "0",
@@ -157,6 +170,8 @@ $("#bars").click(function mobile_menu() {
         $("#bars svg").attr("class", "svg-inline--fa fa-bars fa-w-14");
         $("#bars svg").css("color", "black");
 
+     
+
         $("#mobile_menu").animate({
             left: '-250px',
         }, 500, function () {
@@ -214,6 +229,7 @@ $("#bars").click(function mobile_menu() {
 
 
         menu_activ();
+        stp();
 
         $('<div class=new3/>').appendTo("#mobile_menu");
         $('<a class="github2" href="#"><i class="fab fa-github"></i></a>').appendTo("#mobile_menu .new3 ");
