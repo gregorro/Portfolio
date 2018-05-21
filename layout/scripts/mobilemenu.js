@@ -1,3 +1,6 @@
+var rel = [true, true];
+
+
 function AnimateRotate(angleStart, angleStop) {
     // caching the object for performance reasons
     var $elem = $('#top');
@@ -20,15 +23,15 @@ function AnimateRotate(angleStart, angleStop) {
 function menu_activ() {
     $("#nav a").each(function () {
         var e = $(this);
-        if ($(e).parents("ul ul ul").length >= 1) { $("<a />", { href: e.attr("href"), text: "- - " + e.text(), onclick: "clo()"}).appendTo("#mobile_menu div") }
-        else if ($(e).parents("ul ul").length >= 1) { $("<a />", { href: e.attr("href"), text: "- " + e.text(), onclick: "clo()"}).appendTo("#manu div") }
-        else if ($(e).parents("ul").length >= 1) { $("<a />", { href: e.attr("href"), text: "" + e.text(), onclick: "clo()"}).appendTo("#mobile_menu div") }
-        else { $("<a />", { href: e.attr("href"), text: e.text(), onclick: "clo()"}).appendTo("#mobile_menu div") }
-       // $("#mobile_menu div a").addEventListener("click", close, false);
+        if ($(e).parents("ul ul ul").length >= 1) { $("<a />", { href: e.attr("href"), text: "- - " + e.text(), onclick: "clo()" }).appendTo("#mobile_menu div") }
+        else if ($(e).parents("ul ul").length >= 1) { $("<a />", { href: e.attr("href"), text: "- " + e.text(), onclick: "clo()" }).appendTo("#manu div") }
+        else if ($(e).parents("ul").length >= 1) { $("<a />", { href: e.attr("href"), text: "" + e.text(), onclick: "clo()" }).appendTo("#mobile_menu div") }
+        else { $("<a />", { href: e.attr("href"), text: e.text(), onclick: "clo()" }).appendTo("#mobile_menu div") }
+        // $("#mobile_menu div a").addEventListener("click", close, false);
     });
 }
 
-function stp(){
+function stp() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -37,11 +40,12 @@ function stp(){
                 behavior: 'smooth'
             });
         });
-    })}
+    })
+}
 
 
 function clo() {
-  
+
     if ($("#bars svg").hasClass("svg-inline--fa fa-times fa-w-12")) {
         $("#bars svg").attr("class", "svg-inline--fa fa-bars fa-w-14");
         $("#bars svg").css("color", "black");
@@ -72,15 +76,22 @@ function clo() {
         $("#bar").css({
             "z-index": "3",
         })
+
+        $(".github, .facebook").css({
+            display: "none",
+        })
     }
 
-    
+
 
 
 }
 
 $("#bars").click(function mobile_menu() {
-    if ($("#bars svg").hasClass("svg-inline--fa fa-bars fa-w-14")) {
+    if ($("#bars svg").hasClass("svg-inline--fa fa-bars fa-w-14") && rel[0] == true && rel[1] == true  && !(go[0]== true && go[1]==false) && $("#start")[0].getBoundingClientRect().top == 0) {
+
+        rel = [false, false];
+
         $("#bars svg").attr("class", "svg-inline--fa fa-times fa-w-14");
         $("#bars svg").css("color", "#black");
 
@@ -158,19 +169,19 @@ $("#bars").click(function mobile_menu() {
             opacity: '0.6'
         }, 500);
 
-      /*  setInterval(function(){
-            if($("#start")[0].getBoundingClientRect().top != 0)
-            close();
-            
-        },45)*/
+        rel[0]=true;
+        setTimeout(function(){
+            rel[1]=true;
+        },1000);
+
 
 
     }
-    else if ($("#bars svg").hasClass("svg-inline--fa fa-times fa-w-12")) {
+    else if ($("#bars svg").hasClass("svg-inline--fa fa-times fa-w-12") && rel[0] == true && rel[1] == true) {
         $("#bars svg").attr("class", "svg-inline--fa fa-bars fa-w-14");
         $("#bars svg").css("color", "black");
+        rel = [false, false];
 
-     
 
         $("#mobile_menu").animate({
             left: '-250px',
@@ -192,10 +203,17 @@ $("#bars").click(function mobile_menu() {
                     opacity: '1'
                 }, 500);
 
+                $(".github, .facebook").css({
+                    display: "none",
+                })
+
 
             });
 
         });
+
+        
+
         $("#icons").animate({
             left: '-250px',
         }, 500)
@@ -220,12 +238,19 @@ $("#bars").click(function mobile_menu() {
             })
         }, 1500);
 
+        rel[0]=true;
+        setTimeout(function(){
+            rel[1]=true;
+        },1000);
+
+
     }
 
-    else if ($("#bars svg").hasClass("svg-inline--fa fa-sort-down fa-w-10")) {
+    else if ($("#bars svg").hasClass("svg-inline--fa fa-sort-down fa-w-10") && rel[0] == true && rel[1] == true &&  !(go[0]== false && go[1]==true)) {
         $("#bars svg").attr("class", "svg-inline--fa fa-sort-up fa-w-10");
 
         $('<form class="new2" action="#"><div/></form>').appendTo("#mobile_menu");
+        rel = [false, false];
 
 
         menu_activ();
@@ -264,8 +289,15 @@ $("#bars").click(function mobile_menu() {
             "background-color": "rgba(207, 207, 207, 0.8)"
         })
 
+        rel[0]=true;
+        setTimeout(function(){
+            rel[1]=true;
+        },1000);
+
+
     }
-    else if ($("#bars svg").hasClass("svg-inline--fa fa-sort-up fa-w-10")) {
+    else if ($("#bars svg").hasClass("svg-inline--fa fa-sort-up fa-w-10") && rel[0] == true && rel[1] == true) {
+        rel = [false, false];
         $("#bars svg").attr("class", "svg-inline--fa fa-sort-down fa-w-10");
 
         $("#bar").animate({
@@ -291,6 +323,11 @@ $("#bars").click(function mobile_menu() {
             $("#mobile_menu .new3").remove();
             $("#mobile_menu form").remove();
         }, 500);
+
+        rel[0]=true;
+        setTimeout(function(){
+            rel[1]=true;
+        },1000);
 
     }
 

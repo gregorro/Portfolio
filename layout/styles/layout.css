@@ -29,7 +29,8 @@ textarea{height: 80px;}
 
 #container{width: 100%; background-color: rgb(207, 207, 207);}
 #mail_box{ width: 600px; margin: 50px 0 0 auto; float: right; z-index: 2; text-align: center; position: relative;}
-form{ width: 400px; text-align: center; background-color: whitesmoke; margin: 50px auto; z-index: 3; padding: 10px 0; box-shadow: 0 0 0px 2px orange;}
+form{ text-align: center; background-color: whitesmoke; margin: 50px auto; z-index: 3; padding: 10px 0; box-shadow: 0 0 0px 2px orange;}
+#form{width: 400px;}
 form p{margin: 5px 0 10px 0}
 form input, form textarea{width: 300px;}
 form input[type*="submit"],form input[type*="reset"] {width: auto;}
@@ -236,7 +237,7 @@ p,a {font-size: 0.75em;}
     .width{width: 100%;max-width:  auto; min-width: auto;}
     .menu li{margin: 0 10px;}
     #contact_box h1{padding-top: 15px;}
-    #color_box{right: unset; top:440px; height: 350px; width: 380px; margin: 0 10% 0 10%;}
+    #color_box{right: 20%; top:440px; height: 350px; width: 380px; margin: 0 auto 0 auto; padding-left: 40px;}
     .end{height: 80px;}
 
 }
@@ -265,7 +266,6 @@ p,a {font-size: 0.75em;}
     #contact_box{width: 100%;}
     .end{width: 85%;}
     #mail_box{width: 100%;}
-    form{width: 80%;}
     #footer p{font-size: 60%;}
     #interests img{width: 100px;}
     #bars{display: block;}
@@ -277,7 +277,9 @@ p,a {font-size: 0.75em;}
     .cont{margin: 5px;}
     .text_box{font-size: 0.4em;}
     .pit{font-size: 0.4em; margin:5px auto 0 auto}
-    form input, form textarea{width: 200px;}
+    #form input, #form textarea{width: 80%;}
+    #form{width: 60%; margin: 0 20%; position: relative; top:50px;}
+    #color_box{width: 60%; margin: 0 10% 0 30%;right: unset; top:370px}
 
 }
 
@@ -285,5 +287,7 @@ p,a {font-size: 0.75em;}
 {
     #skills{height: 250px;}
     #skills img{height: 28px; margin-top:5px;}
+    #form{width: 80%; margin: 0 10%; position: relative; top:50px;}
+    #color_box{width: 80%; margin: 0 5% 0 15%;right: unset; top:370px}
 
 }

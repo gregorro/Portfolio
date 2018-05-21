@@ -43,7 +43,7 @@ $(document).scroll(anim = function () {
         $("#me").animate({
             opacity: 1,
             left: "0",
-        }, 3000);
+        }, 1000);
 
         prawda[0] = 1;
 
@@ -55,12 +55,12 @@ $(document).scroll(anim = function () {
         $(".a").animate({
             opacity: 1,
             left: "0",
-        }, 3000);
+        }, 1000);
 
         $(".b").animate({
             opacity: 1,
             left: "0",
-        }, 3000);
+        }, 1000);
 
         prawda[1] = 1;
 
@@ -83,12 +83,12 @@ $(document).scroll(anim = function () {
         $(".c").animate({
             opacity: 1,
             left: "0",
-        }, 3000);
+        }, 1000);
 
         $(".d").animate({
             opacity: 1,
             left: "0",
-        }, 3000);
+        }, 1000);
 
         prawda[3] = 1;
 
