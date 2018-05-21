@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+a,p, h1,h2,h3{color: black; font-family: 'Kalam', cursive;}
+html, body, container {margin: 0 auto; width: 100%; overflow-x: hidden; overflow-y: auto;}
+a:hover{color: orange;}
+label{display: block;}
+.facebook:hover, .facebook2:hover{color:#3b5998 !important;}
+.github:hover, .github2:hover{color:#767676!important;}
+#bars{display: none; position: fixed; top:15px; margin: 0 0 0 15px;  color: black; z-index: 10; font-size: 20px; height: auto; width: auto;}
+.new{background-color: unset; margin: 50px 0 0 20px;}
+.new a{display: block; text-align: left; font-size: 1.5em; font-weight: 700; margin: 5px 0; text-decoration: none; width: fit-content;}
+.new a:hover{animation-name: hov; animation-duration: 500ms; animation-fill-mode: forwards;}
+
+.new2{background-color: unset; margin: 50px auto 0 auto;}
+.new2 a{display: block; text-align: center; font-size: 1.5em; font-weight: 700; margin: 5px auto; text-decoration: none; width: fit-content;}
+.new2 a:hover{animation-name: hov; animation-duration: 500ms; animation-fill-mode: forwards;}
+
+.new3{background-color: rgba(255, 165, 0, 1); width: 100%; height: 100px;  margin: 0 auto; }
+.new3 a{margin: 0px 10px 0 10px; font-size: 40px; position: relative; top: 15px;}
+
+.grzegorz_mobilne{display: block!important; width: 100%; left: unset!important; font-size: 20px!important;}
+
+
+
+ul{background-color: rgba(255,165,0 ,0.5)}
+#gf{margin: 20px auto 20px auto; display: block;}
+.tel{position: relative; left: -54px;}
+textarea{height: 80px;}
+
+#container{width: 100%; background-color: rgb(207, 207, 207);}
+#mail_box{ width: 600px; margin: 50px 0 0 auto; float: right; z-index: 2; text-align: center; position: relative;}
+form{ width: 400px; text-align: center; background-color: whitesmoke; margin: 50px auto; z-index: 3; padding: 10px 0}
+form p{margin: 5px 0 10px 0}
+form input, form textarea{width: 300px;}
+form input[type*="submit"],form input[type*="reset"] {width: auto;}
+
+#submit{display: block; margin: 0 auto;}
+.end{display: block!important; text-align: center; width: 50%;margin: 0 auto;} 
+.end p{text-align: left !important; }
+
+#contact{height: 600px; background-color: maroon;}
+
+#color_box{position: absolute; background-color: orange; width: 500px; height: 420px; top: 50px; right: 140px; z-index: 1;}
+
+#contact_box{width: 600px; margin: 50px auto 0 0; float: left; position: relative; display: none; z-index: 3; text-align: center;}
+#contact_box p{margin: 5px 0 0 15px;text-align: center; }
+#contact_box h1{margin: 0 0 40px 0; text-align: center;}
+#contact_box a{font-size: 50px; margin: 5px;}
+#contact div{display: inline-block; }
+
+
+#footer{height: 40px; background-color: orange; text-align: center;}
+#footer p{padding: 10px 0 5px 0;margin: 0;}
+#me{position: relative; top: 120px;}
+
+#top{position: absolute; top: 200px; margin: 0 auto 0 auto; width: 100%; text-align: center;}
+#top p{width: 500px; margin: 0 auto 0 auto;}
+
+
+#start{background-image: url("../../images/start.jpeg"); background-repeat: no-repeat; background-position: center;background-size: cover; height: 970px;}
+#info{background-color:orange; height: 600px;background-image:linear-gradient(to bottom,orange 0%,maroon 100%)!important;}
+#skills{background-image: url("../../images/6.jpg"); background-repeat: no-repeat; background-position: center;background-size: cover;height: 850px;}
+/*#projects{background-image: url("../../images/8.jpg"); background-repeat: no-repeat; background-position: center;background-size: cover;}*/
+#interests{background-color: orange;}
+/*#interests{background-image: url("../../images/9.jpg"); background-repeat: no-repeat; background-position: center;background-size: cover;}*/
+/*#contact{background-image: url("../../images/10.jpg"); background-repeat: no-repeat; background-position: center;background-size: cover;}*/
+
+/*#html{top: 20px; left: 300px;}*/
+/*#css{top: -130px; left: 600px;}*/
+/*#js{top: -280px; left: 900px;}*/
+/*#boostrap{top: -50px; left: 50px;}*/
+/*#scss {top: -200px; left: 1200px;}*/
+/*#php{top: -150px; left: 500px;}*/
+/*#php img{width: 100px; margin: 0 auto;}*/
+/*#cpp{top: -300px; left: 950px;}*/
+
+nav{height: 0;} 
+#nav{right: 0; left: 0; position: relative; top: 975px; background-color: rgb(207, 207, 207, 0.6); z-index: 10;}
+
+#bar{width: 300px; background-color: rgba(207, 207, 207, 0.6); height: 970px; position: absolute;}
+#bar p {position: relative; left:150px; padding: 5px;}
+
+#prev a::before{font-family: "Font Awesome 5 Solid" ; content: "\f104";}
+
+.position{margin: 0 auto 0 auto; width: 1200px;}
+.type1 div{display: inline-block;}
+.type1, .type2{text-align: center;}
+.type2 {display: block !important;}
+.type3 img, .type3 p{display: inline-block;}
+.type3 p{width: 500px; padding: 15px;}
+
+#box{width: 300px; height: 200px; background-color: orange; position: absolute; top: 770px;z-index: 2;}
+
+#nav .menu li:hover{ animation-name: hov; animation-duration: 500ms; animation-fill-mode: forwards; }
+
+
+.btn{margin: 10px 5px 0 5px;}
+
+.type_space{margin: 0 400px 0 400px;}
+.type_space_r{margin-left: 650px;}
+.type_space_l{margin-right: 650px;}
+.space{padding: 100px 0;}
+.space:last-child{padding: 100px 0 0 0;}
+.space:first-child{padding: 10px 0 100px 0;}
+
+/*.row{height: 100px;}*/
+.essence{ width: 500px; }
+.photo{position: relative; top: -100px;}
+.photo img{width: 400px; height: auto; border-radius: 20px; border: 3px solid black; padding: 0px;}
+.overall{width: 100%; margin: 0 auto 0 auto;}
+.row{height: 50px; width: 100%; margin: 0; background-color: maroon;}
+.logo{text-align: center; font-size: 50px; font-weight: 900; animation-duration: 2s; animation-name: logo; position: relative;}
+
+
+.text{ top:770px;  position: relative; background-color: rgba(207, 207, 207, 0.6); height: 200px; margin: 0 auto 0 300px;}
+.text p{color: black; font-weight: 700;}
+.blockquote{width: 500px; position: absolute; right: 100px; padding-top: 0px; margin-top: 5px;}
+
+
+.menu{list-style-type: none; width: auto; margin: 0 auto 0 auto; text-align: center; padding: 0; font-size: 28px;}
+
+.menu li {display: inline-block; margin: 0 40px; text-decoration: none;}
+.menu a:hover {text-decoration: none;}
+
+.cont{position: relative;}
+.lc{width: 250px!important;}
+
+.work{padding: 20px 0 50px 0;}
+
+#info img{}
+#info p{margin: 20px 0 0 10px;}
+
+#skills img {width: auto; height: 100px;}
+#skills p{font-weight:600;}
+#skills div div{display: none; position: absolute; width: 150px; }
+#skills div div div{opacity: 0;}
+
+.overlay{position: absolute; top:0; bottom:0; left: 0; right: 0; width: 100%; height: 100%; transition: .5s ease; background-color: rgba(255,165,0 ,0);}
+.cont{position: relative; margin: 10px;}
+.cont:hover .overlay {background-color: rgba(255,165,0 ,0.6);}
+.cont:hover .text_box, .cont:hover .pit{opacity: 1;}
+.text_box {color: black; font-size: 20px; position: absolute;  opacity:0;  top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);height: 60%; width: 80%;} 
+.pit{position: relative ; opacity: 0; transition: .5s ease; background-color: maroon; border-color: maroon; display: block; margin: 20px auto 0 auto; }
+.pit:hover{background-color: maroon; border-color: maroon; }
+
+#projects{background-color: maroon; }
+#projects img{height: 300px; }
+#projects div{display: block; }
+#projects div div{display: inline-block; font-weight: 900;box-shadow: 0 0 20px 2px orange;}
+#projects div div div{box-shadow:none;}
+#projects p{font-size: 30px; font-weight:600; padding: 15px 0; }
+
+.width{width: 1200px; margin: 0 auto; display: block !important; position: relative;}
+
+
+#interests img{width: 150px;}
+#interests .p{font-size: 1.2rem; font-weight:500; padding: 15px 0 5px 0;}
+#interests div{width: 600px; margin: 0 auto; }
+#interests h1{font-size: 2.5rem; font-weight:600; padding: 30px 0 0 0; }
+#interests h2{font-size: 1.8rem; font-weight:500; padding: 20px 0 25px 0;}
+#interests .type3, #interests .type2{width: 900px;}
+#interests .type3 img{margin-bottom: 80px;}
+#interests .bottom p{padding: 15px 15px 15px 15px; margin: 0;}
+
+#icons{width: 120px;  margin: 0 auto; font-size: 40px; top: 70px; position: relative;}
+#icons a{margin: 5px;}
+
+.mobile_skills_info img{height: 45px; display: inline-grid; margin: 20px 10px 0 0; }
+.mobile_skills_info div div{display: inline-grid!important;}
+.mobile_skills_info div{width: fit-content; margin: 0 auto; max-width: 70%; }
+.mobile_skills_info {height: auto; background-color:lightgray;}
+
+
+
+/*#li1, #li2, #li3, #li4, #li5, #li6 {position: absolute;} 
+#li1{}
+#li2 {}
+#li1{}
+#li2 {}
+#li1{}
+#li2 {}
+/* Style inputs with type="text", select elements and textareas */
+#grzegorz{display: none;}
+
+@keyframes logo { from {transform:rotateZ(90deg); left:600px; opacity: 0;} to{transform:rotateZ(0deg); left:0; opacity: 1;}}
+
+@keyframes hov { from {transform:rotateZ(0deg); } to{transform:rotateZ(5deg); }}
+
+@media screen and (max-width: 1300px)
+{
+    #skills{height: 600px;}
+    #skills img{height: 70px;}
+    .type1 div{display: block;}
+    .essence{margin: 0 auto; position: relative; top: -80px;}
+    .photo img{width: 300px;}
+    #info{height: 680px;}
+    /*nav{display: none;}*/
+    #contact_box{width: 50%; }
+    #mail_box{width: 50%;}
+    .width{ width: auto; max-width: 1200px; min-width: 800px;}
+    #color_box{right: 5%; width: 50%;}
+    form{margin-right: 10px;}
+    .menu li{margin: 0 20px;}
+    #projects img{height: 250px;}
+    .text_box{font-size: 1em;}
+
+}
+@media screen and (max-width: 1040px)
+{
+    .logo{font-size: 30px;}
+#top p{width: 300px;}
+p,a {font-size: 0.75em;}
+#bar{width: 25%;}
+#box{width: 25%;}
+.text{width: 75%; margin: 0 auto 0 25%;}
+.blockquote{right: 10%; width: 75%;}
+#info{height: 550px;}
+#me{height: 400px;}
+#skills p{font-size:60%;}
+#skills {width: 100%; height: 450px;}
+#skills img{height: 50px;}
+#skills div div {width: 70px;}
+#bar p{left:45%;}
+#projects img{height: 200px;}
+.text_box{font-size: 0.8em;}
+}
+@media screen and (max-width: 900px)
+{
+    .type3 img, .type3 p{display: block; margin: 0 auto;}
+    #interests .type3, #interests .type2{width: 100%;}
+    .lc{width: 150px!important}
+    #interests .type3 img{margin: 10px auto 10px auto;}
+    #contact_box{display: block !important; float: none; margin: 0 auto; width: 80%;}
+    #mail_box{display: block !important; float: none; margin: 40px auto 0 auto; }
+    #contact{height: 850px;}
+    #color_box{top: 350px; right: 30%;}
+    .width{width: 100%;max-width:  auto; min-width: auto;}
+    .menu li{margin: 0 10px;}
+    #contact_box h1{padding-top: 15px;}
+
+}
+
+@media screen and (max-width: 670px)
+{
+    #start{height: 600px;}
+    #bar p{left:5%; font-size: 60%; display: none;}
+    #bar{width: 15%;  height: 500px;}
+    #box{width:15%; top:500px; height: 100px;}
+    .github, .facebook{display: none;}
+    .text{top: 500px; height: 100px; width:85%; margin: 0 auto 0 15%;}
+    .blockquote{width: 85%;}
+    .blockquote p{font-size: 50%;}
+    .blockquote-footer{color: orange;}
+    .photo img{width: 200px;}
+    .essence{width: 100%;}
+    #info p{margin:20px 10px 20px 10px;}
+    #skills{height: 350px;}
+    #skills button{font-size: 0.6em;}
+    #skills img{height: 35px;}
+    #projects p{font-size:1.5em; padding: 0;}
+    #projects img{ height: 80px; }
+    .type3 p{width: 100%;}
+    #interests div{width: auto;}
+    #contact_box{width: 100%;}
+    .end{width: 85%;}
+    #mail_box{width: 100%;}
+    form{width: 80%;}
+    #color_box{top:362px; right: 40px; height: 330px; width: 80%;}
+    #footer p{font-size: 60%;}
+    #interests img{width: 100px;}
+    #bars{display: block;}
+    #icons a{font-size: 42px;}
+    #grzegorz{font-size: 0.4em; text-align: center;}
+    nav{display: none;}
+    .bye{display: none;}
+    #footer{height: 30px;}
+    .cont{margin: 5px;}
+    .text_box{font-size: 0.4em;}
+    .pit{font-size: 0.4em; margin:5px auto 0 auto}
+    form input, form textarea{width: 200px;}
+
+}
+
+@media screen and (max-width: 470px)
+{
+    #skills{height: 250px;}
+    #skills img{height: 28px; margin-top:5px;}
+
+}
