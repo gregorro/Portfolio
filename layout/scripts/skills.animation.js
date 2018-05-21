@@ -76,7 +76,7 @@ str = function () {
 }
 
 var time = 0;
-var om = 0.01;
+var om = 0.03;
 var con = 0;
 var step = 0;
 var int;
@@ -98,6 +98,7 @@ var i;
 // resizing
 $(window).resize(function () {
     skills = $("#skills")[0].getBoundingClientRect();
+    skills_offset = $("#skills").offset();
     set();
 });
 

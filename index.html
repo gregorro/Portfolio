@@ -347,10 +347,14 @@
     <script src="layout/scripts/mobilemenu.js"></script>
     <script>
 
-        var go = false;
+        var go = [];
+        go=[false,false];
+    
 
         $(window).scroll(function () {
-            if ($("#start")[0].getBoundingClientRect().top < 0 && go == false && screen.width < 670) {
+            if ($("#start")[0].getBoundingClientRect().top < 0 && go[0] == false && go[1] == false && screen.width < 670) {
+                
+                
                 $("#bar").css({
                     position: "fixed",
                     height: $("#start")[0].getBoundingClientRect().bottom - 100,
@@ -359,55 +363,62 @@
 
                 $("#bar").animate({
                     height: '60px',
-                }, 500);
+                }, 300);
 
                 $("#bar").animate({
                     width: '100%',
-                }, 500)
+                }, 300)
 
                 $("#bar").animate({
                     height: '20px',
-                }, 500, function () {
+                }, 300, function () {
                     if ($("#bars svg").hasClass("svg-inline--fa fa-bars fa-w-14")) {
                         $("#bars").animate({
                             top: "-30px"
-                        }, 200, function () {
+                        }, 100, function () {
                             $("#bars svg").attr("class", "svg-inline--fa fa-sort-down fa-w-10");
                             $("#bars").animate({
                                 top: "3px",
-                            }, 200);
+                            }, 100);
                         })
                     }
                 });
 
-                go = true;
+                setTimeout(function(){
+                    go[1] = true;
+                },1000);
+                go[0] = true;
             }
-            if ($("#start")[0].getBoundingClientRect().top == 0 && go == true && screen.width < 670 && !$("#bars svg").hasClass("svg-inline--fa fa-sort-up fa-w-10")) {
+            if ($("#start")[0].getBoundingClientRect().top == 0 && go[0] == true && go[1] == true && screen.width < 670 && !$("#bars svg").hasClass("svg-inline--fa fa-sort-up fa-w-10")) {
 
                 $("#bars").animate({
                     top: "-30px"
-                }, 200, function () {
+                }, 100, function () {
                     $("#bars svg").attr("class", "svg-inline--fa fa-bars fa-w-14");
                     $("#bars").animate({
                         top: "15px",
-                    }, 200);
+                    }, 100);
                 })
 
 
 
                 $("#bar").animate({
                     height: '60px',
-                }, 500);
+                }, 300);
 
                 $("#bar").animate({
                     width: '15%',
-                }, 500);
+                }, 300);
 
                 $("#bar").animate({
                     height: '500px',
-                }, 500);
+                }, 300);
 
-                go = false;
+                
+                setTimeout(function(){
+                    go[0] = false;
+                },1000);
+                go[1]=false;
 
 
             }

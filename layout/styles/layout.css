@@ -22,14 +22,14 @@ label{display: block;}
 
 
 
-ul{background-color: rgba(255,165,0 ,0.5)}
+ul{background-color: rgba(80, 71, 53, 0.5)}
 #gf{margin: 20px auto 20px auto; display: block;}
 .tel{position: relative; left: -54px;}
 textarea{height: 80px;}
 
 #container{width: 100%; background-color: rgb(207, 207, 207);}
 #mail_box{ width: 600px; margin: 50px 0 0 auto; float: right; z-index: 2; text-align: center; position: relative;}
-form{ width: 400px; text-align: center; background-color: whitesmoke; margin: 50px auto; z-index: 3; padding: 10px 0}
+form{ width: 400px; text-align: center; background-color: whitesmoke; margin: 50px auto; z-index: 3; padding: 10px 0; box-shadow: 0 0 0px 2px orange;}
 form p{margin: 5px 0 10px 0}
 form input, form textarea{width: 300px;}
 form input[type*="submit"],form input[type*="reset"] {width: auto;}
@@ -38,7 +38,7 @@ form input[type*="submit"],form input[type*="reset"] {width: auto;}
 .end{display: block!important; text-align: center; width: 50%;margin: 0 auto;} 
 .end p{text-align: left !important; }
 
-#contact{height: 600px; background-color: maroon;}
+#contact{height: 600px; background-color: whitesmoke;}
 
 #color_box{position: absolute; background-color: orange; width: 500px; height: 420px; top: 50px; right: 140px; z-index: 1;}
 
@@ -58,7 +58,7 @@ form input[type*="submit"],form input[type*="reset"] {width: auto;}
 
 
 #start{background-image: url("../../images/start.jpeg"); background-repeat: no-repeat; background-position: center;background-size: cover; height: 970px;}
-#info{background-color:orange; height: 600px;background-image:linear-gradient(to bottom,orange 0%,maroon 100%)!important;}
+#info{background-color:orange; height: 600px;background-image:linear-gradient(to bottom,orange 0%,whitesmoke 100%)!important;}
 #skills{background-image: url("../../images/6.jpg"); background-repeat: no-repeat; background-position: center;background-size: cover;height: 850px;}
 /*#projects{background-image: url("../../images/8.jpg"); background-repeat: no-repeat; background-position: center;background-size: cover;}*/
 #interests{background-color: orange;}
@@ -108,7 +108,7 @@ nav{height: 0;}
 .photo{position: relative; top: -100px;}
 .photo img{width: 400px; height: auto; border-radius: 20px; border: 3px solid black; padding: 0px;}
 .overall{width: 100%; margin: 0 auto 0 auto;}
-.row{height: 50px; width: 100%; margin: 0; background-color: maroon;}
+.row{height: 50px; width: 100%; margin: 0; background-color: whitesmoke;}
 .logo{text-align: center; font-size: 50px; font-weight: 900; animation-duration: 2s; animation-name: logo; position: relative;}
 
 
@@ -140,13 +140,13 @@ nav{height: 0;}
 .cont:hover .overlay {background-color: rgba(255,165,0 ,0.6);}
 .cont:hover .text_box, .cont:hover .pit{opacity: 1;}
 .text_box {color: black; font-size: 20px; position: absolute;  opacity:0;  top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);height: 60%; width: 80%;} 
-.pit{position: relative ; opacity: 0; transition: .5s ease; background-color: maroon; border-color: maroon; display: block; margin: 20px auto 0 auto; }
-.pit:hover{background-color: maroon; border-color: maroon; }
+.pit{position: relative ; opacity: 0; transition: .5s ease; color:black; background-color: whitesmoke; border-color: whitesmoke; display: block; margin: 20px auto 0 auto; }
+.pit:hover{background-color: whitesmoke; border-color: whitesmoke; color: black;}
 
-#projects{background-color: maroon; }
+#projects{background-color: whitesmoke; }
 #projects img{height: 300px; }
 #projects div{display: block; }
-#projects div div{display: inline-block; font-weight: 900;box-shadow: 0 0 20px 2px orange;}
+#projects div div{display: inline-block; font-weight: 900;box-shadow:0 0 0px 2px orange;}
 #projects div div div{box-shadow:none;}
 #projects p{font-size: 30px; font-weight:600; padding: 15px 0; }
 
