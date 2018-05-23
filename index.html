@@ -2,13 +2,13 @@
 <html lang="pl">
 
 <head>
-    <title>Grzegorz Kikut - Portfolio</title>
     <meta charset="utf-8">
+    <title>Grzegorz Kikut - Portfolio</title>
     <meta name="" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="index, follow" />
     <meta name="autor" content="Grzegorz Kikut" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
@@ -21,8 +21,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113505535-3"></script>
+    <link rel="stylesheet" href="layout/styles/jquery-ui.min.css">
+    <script src="layout/scripts/external/jquery/jquery.js"></script>
+    <script src="layout/scripts/jquery-ui.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -65,7 +68,7 @@
                 </ul>
             </div>
         </nav>
-        <section>
+        <main>
             <div id="bars">
                 <i class="fas fa-bars"></i>
             </div>
@@ -120,7 +123,7 @@
                                     cursus est. Aliquam erat volutpat. Mauris ex arcu, tempor at tortor quis, laoreet scelerisque
                                     nibh. Vestibulum vitae odio velit. Phasellus venenatis pellentesque sapien. Praesent
                                     lobortis ligula quis ligula consequat fringilla. Sed at nibh mi.</p>
-                                <button type="button" class="btn btn-warning">Zobacz moje CV</button>
+                                <button type="button" class="btn btn-warning mm">Zobacz moje CV</button>
                             </div>
                         </div>
                     </div>
@@ -201,7 +204,7 @@
                                     <div class="overlay">
                                         <div class="text_box">Moja pierwsza strona zrobiona na użytek SKTT Iskra PWr, dokonane są znaczące modyfikacje
                                             względem oryginału, od innego wyglądu wersji mobilnej po dodoanie wielu usprawnień.
-                                            <button type="button" class="btn btn-danger pit">Zobacz stronę</button>
+                                            <button type="button" class="btn btn-default pit">Zobacz stronę</button>
                                         </div>
                                     </div>
                                 </div>
@@ -210,7 +213,7 @@
                                     <div class="overlay">
                                         <div class="text_box">Strona robiona dla Klubu GKS Start Długołęka, projekt w wersji przed personalizacją
                                             treści.
-                                            <button type="button" class="btn btn-danger pit">Zobacz stronę</button>
+                                            <button type="button" class="btn btn-default pit">Zobacz stronę</button>
                                         </div>
                                     </div>
                                 </div>
@@ -221,7 +224,7 @@
                                     <img src="images/ottt.png" alt="OTTT o Puchar JM Rektora PWr">
                                     <div class="overlay">
                                         <div class="text_box">Autorska strona przygotowana na potrzeby Ogólnopolskiego Turnieju Tańca Towarzyskiego.
-                                            <button type="button" class="btn btn-danger pit">Zobacz stronę</button>
+                                            <button type="button" class="btn btn-default pit">Zobacz stronę</button>
                                         </div>
                                     </div>
                                 </div>
@@ -229,7 +232,7 @@
                                     <img src="images/index.html.png" alt="Portfolio">
                                     <div class="overlay">
                                         <div class="text_box">Moje portfolio w którym starałem sie zawrzeć całośc mojej wiedzy i umiejętności.
-                                            <button type="button" class="btn btn-danger pit">Zobacz stronę</button>
+                                            <button type="button" class="btn btn-default pit">Zobacz stronę</button>
                                         </div>
                                     </div>
                                 </div>
@@ -330,7 +333,7 @@
                     </div>
                 </div>
             </article>
-        </section>
+        </main>
         <footer>
             <div id="footer">
                 <p>Copyright © 2018 - Wszelkie prawa zastrzeżone - Grzegorz Kikut</p>
@@ -346,89 +349,12 @@
     <script src="layout/scripts/mobilemenu.js"></script>
     <script>
 
-        var go = [];
-        go = [false, false];
-
-
-
-        $(window).scroll(function () {
-            if ($("#start")[0].getBoundingClientRect().top < 0 && go[0] == false && go[1] == false && screen.width < 670 ) {
-
-
-
-                $("#bar").css({
-                    position: "fixed",
-                    height: $("#start")[0].getBoundingClientRect().bottom - 100,
-                    'z-index': "3"
-                })
-
-                $("#bar").animate({
-                    height: '60px',
-                }, 300);
-
-                $("#bar").animate({
-                    width: '100%',
-                }, 300)
-
-                $("#bar").animate({
-                    height: '20px',
-                }, 300, function () {
-                    if ($("#bars svg").hasClass("svg-inline--fa fa-bars fa-w-14")) {
-                        $("#bars").animate({
-                            top: "-30px"
-                        }, 100, function () {
-                            $("#bars svg").attr("class", "svg-inline--fa fa-sort-down fa-w-10");
-                            $("#bars").animate({
-                                top: "3px",
-                            }, 100);
-                        })
-                    }
-                });
-
-                setTimeout(function () {
-                    go[1] = true;
-                }, 1500);
-                go[0] = true;
-            }
-            if ($("#start")[0].getBoundingClientRect().top == 0 && go[0] == true && go[1] == true && screen.width < 670 && !$("#bars svg").hasClass("svg-inline--fa fa-sort-up fa-w-10")) {
-
-
-                $("#bars").animate({
-                    top: "-30px"
-                }, 100, function () {
-                    $("#bars svg").attr("class", "svg-inline--fa fa-bars fa-w-14");
-                    $("#bars").animate({
-                        top: "15px",
-                    }, 100);
-                })
-
-
-
-                $("#bar").animate({
-                    height: '60px',
-                }, 300);
-
-                $("#bar").animate({
-                    width: '15%',
-                }, 300);
-
-                $("#bar").animate({
-                    height: '500px',
-                }, 300);
-
-
-                setTimeout(function () {
-                    go[1] = false;
-                }, 1500);
-                go[0] = false;
-
-
-            }
-        })
 
 
     </script>
     <script>
+
+        // animacja przejsc miedzy linkami
         $(document).ready(function stp() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {

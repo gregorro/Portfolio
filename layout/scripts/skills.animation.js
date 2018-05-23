@@ -76,7 +76,7 @@ str = function () {
 }
 
 var time = 0;
-var om = 0.03;
+var om = 0.02;
 var con = 0;
 var step = 0;
 var val=[true,true];
@@ -111,7 +111,7 @@ var one = function () {
 $("#prev").click(function () {
     if (val[0] == true && val[1] == true) {
         val=[false,false];
-        
+
         if (ilosc != null) {
             tabIdDiv[ilosc].animate({ left: 0 + 'px', opacity: '0' }, 1000);
         }
@@ -203,11 +203,11 @@ value = function () {
                 nr = null;
                 setTimeout(function () {
                     tabIdDiv[i].css("display", "inherit");
-                    if (screen.width > 900)
+                    if ($(window).width() > 900)
                         tabIdDiv[i].animate({ opacity: '1', left: 150 + 'px' }, 1500);
-                    if (screen.width <= 900 && screen.width > 670)
+                    if ($(window).width() <= 900 && $(window).width() > 650)
                         tabIdDiv[i].animate({ opacity: '1', left: 100 + 'px' }, 1500);
-                    if (screen.width <= 670) {
+                    if ($(window).width() <= 650) {
                         $(".mobile_skills_info").remove();
                         $('<div class="mobile_skills_info"/>').appendTo(".here");
                         $(tabId[ilosc]).clone().appendTo(".mobile_skills_info");

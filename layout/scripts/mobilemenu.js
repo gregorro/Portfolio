@@ -68,10 +68,8 @@ function clo() {
             width: '15%',
 
         });
-        $('html, body').css({
-            overflow: 'auto',
-            height: 'auto'
-        });
+        $('html,body').removeAttr('style');
+        
         $("#mobile_menu form").remove();
         $("#bar").css({
             "z-index": "3",
@@ -125,8 +123,8 @@ $("#bars").click(function mobile_menu() {
         $("#grzegorz").css("display", "block");
 
 
-        $('html, body').css({
-            overflow: 'hidden',
+        $('html,body').css({
+            'overflow-y': 'hidden',
             height: '100%'
         });
 
@@ -223,14 +221,11 @@ $("#bars").click(function mobile_menu() {
 
         }, 500)
 
-        $('html, body').css({
-            overflow: 'auto',
-            height: 'auto'
-        });
 
         setTimeout(function () {
             $("#mobile_menu form").remove();
-        }, 500);
+            $('html,body').removeAttr('style');
+        }, 1000);
 
         setTimeout(function () {
             $("#bar").css({
@@ -292,7 +287,7 @@ $("#bars").click(function mobile_menu() {
         rel[0]=true;
         setTimeout(function(){
             rel[1]=true;
-        },1000);
+        },500);
 
 
     }
@@ -327,12 +322,107 @@ $("#bars").click(function mobile_menu() {
         rel[0]=true;
         setTimeout(function(){
             rel[1]=true;
-        },1000);
+        },500);
+
+    }
+})
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+var go = [];
+go = [false, false];
+
+
+$(window).scroll(function () {
+    if ($("#start")[0].getBoundingClientRect().top < 0 && go[0] == false && go[1] == false && $(window).width() <= 650) {
+
+
+
+        $("#bar").css({
+            position: "fixed",
+            height: $("#start")[0].getBoundingClientRect().bottom - 100,
+            'z-index': "3"
+        })
+
+        $("#bar").animate({
+            height: '60px',
+        }, 200);
+
+        $("#bar").animate({
+            width: '100%',
+        }, 200)
+
+        $("#bar").animate({
+            height: '20px',
+        }, 200, function () {
+            if ($("#bars svg").hasClass("svg-inline--fa fa-bars fa-w-14")) {
+                $("#bars").animate({
+                    top: "-30px"
+                }, 100, function () {
+                    $("#bars svg").attr("class", "svg-inline--fa fa-sort-down fa-w-10");
+                    $("#bars").animate({
+                        top: "3px",
+                    }, 100);
+                })
+            }
+        });
+
+        setTimeout(function () {
+            go[1] = true;
+        }, 1000);
+        go[0] = true;
+    }
+    if ($("#start")[0].getBoundingClientRect().top == 0 && go[0] == true && go[1] == true && $(window).width() <= 650 && !$("#bars svg").hasClass("svg-inline--fa fa-sort-up fa-w-10")) {
+
+
+        $("#bars").animate({
+            top: "-30px"
+        }, 200, function () {
+            $("#bars svg").attr("class", "svg-inline--fa fa-bars fa-w-14");
+            $("#bars").animate({
+                top: "15px",
+            }, 100);
+        })
+
+
+
+        $("#bar").animate({
+            height: '60px',
+        }, 200);
+
+        $("#bar").animate({
+            width: '15%',
+        }, 200);
+
+        $("#bar").animate({
+            height: '500px',
+        }, 200);
+
+
+        setTimeout(function () {
+            go[1] = false;
+        }, 1000);
+        go[0] = false;
+
 
     }
 
-
-
-
 })
+
+$(window).resize(function () {
+    if ($(window).width() > 650) {
+        $('#bar').removeAttr('style');
+        $('#box').removeAttr('style');
+        $('#icons').removeAttr('style');
+        $('.github').removeAttr('style');
+        $('.facebook').removeAttr('style');
+        $('#grzegorz').removeAttr('style');
+
+    }
+})
+
+
+
+
 

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-a,p, h1,h2,h3{color: black; font-family: 'Kalam', cursive;}
+a,p, h1,h2,h3{color: black; font-family: 'Dosis', sans-serif;}
 html, body, container {margin: 0 auto; width: 100%; overflow-x: hidden; overflow-y: auto;}
 a:hover{color: orange;}
 label{display: block;}
@@ -22,7 +22,7 @@ label{display: block;}
 
 
 
-ul{background-color: rgba(80, 71, 53, 0.5)}
+ul{background-color: rgba(245,245,245, 0.4)}
 #gf{margin: 20px auto 20px auto; display: block;}
 .tel{position: relative; left: -54px;}
 textarea{height: 80px;}
@@ -76,7 +76,7 @@ form input[type*="submit"],form input[type*="reset"] {width: auto;}
 /*#cpp{top: -300px; left: 950px;}*/
 
 nav{height: 0;} 
-#nav{right: 0; left: 0; position: relative; top: 975px; background-color: rgb(207, 207, 207, 0.6); z-index: 10;}
+#nav{right: 0; left: 0; position: relative; top: 975px; z-index: 10;}
 
 #bar{width: 300px; background-color: rgba(207, 207, 207, 0.6); height: 970px; position: absolute;}
 #bar p {position: relative; left:150px; padding: 5px;}
@@ -118,7 +118,7 @@ nav{height: 0;}
 .blockquote{width: 500px; position: absolute; right: 100px; padding-top: 0px; margin-top: 5px;}
 
 
-.menu{list-style-type: none; width: auto; margin: 0 auto 0 auto; text-align: center; padding: 0; font-size: 28px;}
+.menu{list-style-type: none; width: auto; margin: 0 auto 0 auto; text-align: center; padding: 0; font-size: 28px; font-weight: 700;}
 
 .menu li {display: inline-block; margin: 0 40px; text-decoration: none;}
 .menu a:hover {text-decoration: none;}
@@ -141,8 +141,8 @@ nav{height: 0;}
 .cont:hover .overlay {background-color: rgba(255,165,0 ,0.6);}
 .cont:hover .text_box, .cont:hover .pit{opacity: 1;}
 .text_box {color: black; font-size: 20px; position: absolute;  opacity:0;  top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);height: 60%; width: 80%;} 
-.pit{position: relative ; opacity: 0; transition: .5s ease; color:black; background-color: whitesmoke; border-color: whitesmoke; display: block; margin: 20px auto 0 auto; }
-.pit:hover{background-color: whitesmoke; border-color: whitesmoke; color: black;}
+.pit{position: relative ; opacity: 0; animation-duration: 200ms; animation-fill-mode: forwards ; transition: .5s ease; color:black; font-weight: 700; background-color: rgba(0,0,0,0); border-radius: 0; border-color: whitesmoke; display: block; margin: 20px auto 0 auto; }
+.pit:hover{background-color: whitesmoke; border-color: whitesmoke; color: black; animation-name: change;}
 
 #projects{background-color: whitesmoke; }
 #projects img{height: 300px; }
@@ -171,21 +171,18 @@ nav{height: 0;}
 .mobile_skills_info div{width: fit-content; margin: 0 auto; max-width: 70%; }
 .mobile_skills_info {height: auto; background-color:lightgray;}
 
+.mm{font-size: 20px; margin-top: 20px; font-weight: 500; background-color: unset; border-radius: 0; border-width: 2px; border-color: black;}
+.mm:hover, .mm:active, .mm:focus{background-color: unset!important; animation-name: change; animation-duration: 350ms; animation-fill-mode: forwards; border-color: black !important; box-shadow: none!important;}
 
 
-/*#li1, #li2, #li3, #li4, #li5, #li6 {position: absolute;} 
-#li1{}
-#li2 {}
-#li1{}
-#li2 {}
-#li1{}
-#li2 {}
-/* Style inputs with type="text", select elements and textareas */
+
 #grzegorz{display: none;}
 
 @keyframes logo { from {transform:rotateZ(90deg); left:600px; opacity: 0;} to{transform:rotateZ(0deg); left:0; opacity: 1;}}
 
 @keyframes hov { from {transform:rotateZ(0deg); } to{transform:rotateZ(5deg); }}
+
+@keyframes change{ from{border-radius: 0;} to{border-radius: 12px;} }
 
 @media screen and (max-width: 1300px)
 {
@@ -252,7 +249,7 @@ p,a {font-size: 0.75em;}
     .text{top: 500px; height: 100px; width:85%; margin: 0 auto 0 15%;}
     .blockquote{width: 85%;}
     .blockquote p{font-size: 50%;}
-    .blockquote-footer{color: orange;}
+    .blockquote-footer{color: black;}
     .photo img{width: 200px;}
     .essence{width: 100%;}
     #info p{margin:20px 10px 20px 10px;}
@@ -260,7 +257,6 @@ p,a {font-size: 0.75em;}
     #skills button{font-size: 0.6em;}
     #skills img{height: 35px;}
     #projects p{font-size:1.5em; padding: 0;}
-    #projects img{ height: 80px; }
     .type3 p{width: 100%;}
     #interests div{width: auto;}
     #contact_box{width: 100%;}
@@ -275,11 +271,16 @@ p,a {font-size: 0.75em;}
     .bye{display: none;}
     #footer{height: 30px;}
     .cont{margin: 5px;}
-    .text_box{font-size: 0.4em;}
-    .pit{font-size: 0.4em; margin:5px auto 0 auto}
-    #form input, #form textarea{width: 80%;}
+    .text_box{font-size: 0.7em;}
+    .pit{font-size: 1em; margin:5px auto 0 auto}
+    #form input,#form textarea{width: 80%;}
+    #form input[type=submit]{width: 30%!important;}
     #form{width: 60%; margin: 0 20%; position: relative; top:50px;}
     #color_box{width: 60%; margin: 0 10% 0 30%;right: unset; top:370px}
+    .work{padding: 15px 0 20px 0;}
+    #projects img{ height: auto; width: 300px;}
+    #projects div div{margin: 15px 0 10px 0}
+    #projects div div div{margin: 0;}
 
 }
 

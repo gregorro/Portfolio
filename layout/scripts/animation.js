@@ -1,44 +1,44 @@
 var prawda = [];
-$(document).ready(function () { 
+$(document).ready(function () {
     $("#me").css({
         "position": "relative",
         "opacity": "0",
-        "left": "500px",
+        "left": "50px",
     });
     $(".a").css({
         "position": "relative",
         "opacity": "0",
-        "left": "500px",
+        "left": "50px",
     });
 
     $(".b").css({
         "position": "relative",
         "opacity": "0",
-        "left": "-500px",
+        "left": "-50px",
     });
     $("#programowanie").css({
         "position": "relative",
         "opacity": "0",
-        "top": "500px",
+        "top": "50px",
     });
     $(".c").css({
         "position": "relative",
         "opacity": "0",
-        "left": "-500px",
+        "left": "-50px",
     });
 
     $(".d").css({
         "position": "relative",
         "opacity": "0",
-        "left": "500px",
+        "left": "50px",
     });
 
 
-    anim(); 
+    anim();
 });
 
 $(document).scroll(anim = function () {
-    if ($(".photo")[0].getBoundingClientRect().top < $(window).height()  && prawda[0] != 1) {
+    if ($(".photo")[0].getBoundingClientRect().top < $(window).height() - 100 && prawda[0] != 1) {
 
         $("#me").animate({
             opacity: 1,
@@ -49,7 +49,7 @@ $(document).scroll(anim = function () {
 
     }
 
-    if ($("#projects")[0].getBoundingClientRect().top < $(window).height() - 50 && prawda[1] != 1) {
+    if ($("#projects")[0].getBoundingClientRect().top < $(window).height() - 150 && prawda[1] != 1) {
 
 
         $(".a").animate({
@@ -66,18 +66,18 @@ $(document).scroll(anim = function () {
 
     }
 
-    if ($(".p")[0].getBoundingClientRect().top < $(window).height() && prawda[2] != 1) {
+    if ($(".p")[0].getBoundingClientRect().top < $(window).height() - 100 && prawda[2] != 1) {
 
 
         $("#programowanie").animate({
             opacity: 1,
             top: "0",
-        }, 2000);
+        }, 1000);
 
         prawda[2] = 1;
     }
 
-    if ($(".c")[0].getBoundingClientRect().top < $(window).height() + 50 && prawda[3] != 1) {
+    if ($(".c")[0].getBoundingClientRect().top < $(window).height() - 150 && prawda[3] != 1) {
 
 
         $(".c").animate({
