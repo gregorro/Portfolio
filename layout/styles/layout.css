@@ -1,12 +1,12 @@
 @charset "utf-8";
 
 a,p, h1,h2,h3{color: black; font-family: 'Dosis', sans-serif;}
-html, body, container {margin: 0 auto; width: 100%; overflow-x: hidden; overflow-y: auto;}
+html, body, container {margin: 0 auto; width: 100%; overflow-x: hidden; overflow-y: auto; -ms-overflow-style: none; -webkit-overflow-scrolling: unset; }
 a:hover{color: orange;}
 label{display: block;}
 .facebook:hover, .facebook2:hover{color:#3b5998 !important;}
 .github:hover, .github2:hover{color:#767676!important;}
-#bars{display: none; position: fixed; top:15px; margin: 0 0 0 15px;  color: black; z-index: 10; font-size: 20px; height: auto; width: auto;}
+#bars{display: none; position: fixed; top:15px; margin: 0 0 0 15px; color: black; z-index: 10; font-size: 20px; height: auto; width: auto;}
 .new{background-color: unset; margin: 50px 0 0 20px; box-shadow: none;}
 .new a{display: block; text-align: left; font-size: 1.5em; font-weight: 700; margin: 5px 0; text-decoration: none; width: fit-content;}
 .new a:hover{animation-name: hov; animation-duration: 500ms; animation-fill-mode: forwards;}
@@ -41,7 +41,7 @@ form input[type*="submit"],form input[type*="reset"] {width: auto;}
 
 #contact{height: 600px; background-color: whitesmoke;}
 
-#color_box{position: absolute; background-color: orange; width: 450px; height: 400px; z-index: 1; display: block; top:100px; right: 10%;}
+#color_box{position: absolute; background-color: orange; width: 430px; height: 400px; z-index: 1; display: block; top:105px; right: 10%;}
 
 #contact_box{width: 600px; margin: 50px auto 0 0; float: left; position: relative; display: none; z-index: 3; text-align: center;}
 #contact_box p{margin: 5px 0 0 15px;text-align: center; }
@@ -55,7 +55,7 @@ form input[type*="submit"],form input[type*="reset"] {width: auto;}
 #me{position: relative; top: 120px;}
 
 #top{position: absolute; top: 200px; margin: 0 auto 0 auto; width: 100%; text-align: center;}
-#top p{width: 500px; margin: 0 auto 0 auto;}
+#top h1{width: 500px; margin: 0 auto 0 auto;}
 
 
 #start{background-image: url("../../images/start.jpeg"); background-repeat: no-repeat; background-position: center;background-size: cover; height: 970px;}
@@ -96,6 +96,7 @@ nav{height: 0;}
 
 
 .btn{margin: 10px 5px 0 5px;}
+.btn a{text-decoration: none; color: black; font-size: 1.3em;}
 
 .type_space{margin: 0 400px 0 400px;}
 .type_space_r{margin-left: 650px;}
@@ -141,7 +142,7 @@ nav{height: 0;}
 .cont:hover .overlay {background-color: rgba(255,165,0 ,0.6);}
 .cont:hover .text_box, .cont:hover .pit{opacity: 1;}
 .text_box {color: black; font-size: 20px; position: absolute;  opacity:0;  top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);height: 60%; width: 80%;} 
-.pit{position: relative ; opacity: 0; animation-duration: 200ms; animation-fill-mode: forwards ; transition: .5s ease; color:black; font-weight: 700; background-color: rgba(0,0,0,0); border-radius: 0; border-color: whitesmoke; display: block; margin: 20px auto 0 auto; }
+.pit{position: relative ; opacity: 0; animation-duration: 200ms; animation-fill-mode: forwards ; transition: .5s ease; color:black; font-weight: 600; background-color: rgba(0,0,0,0); border-radius: 0; border-color: whitesmoke; display: block; margin: 20px auto 0 auto; }
 .pit:hover{background-color: whitesmoke; border-color: whitesmoke; color: black; animation-name: change;}
 
 #projects{background-color: whitesmoke; }
@@ -149,7 +150,7 @@ nav{height: 0;}
 #projects div{display: block; }
 #projects div div{display: inline-block; font-weight: 900;box-shadow:0 0 0px 2px orange;}
 #projects div div div{box-shadow:none;}
-#projects p{font-size: 30px; font-weight:600; padding: 15px 0; }
+#projects h1{font-size: 30px; font-weight:600; padding: 15px 0; }
 
 .width{width: 1200px; margin: 0 auto; display: block !important; position: relative;}
 
@@ -162,6 +163,8 @@ nav{height: 0;}
 #interests .type3, #interests .type2{width: 900px;}
 #interests .type3 img{margin-bottom: 80px;}
 #interests .bottom p{padding: 15px 15px 15px 15px; margin: 0;}
+.c{position: relative; top: -70px;}
+
 
 #icons{width: 120px;  margin: 0 auto; font-size: 40px; top: 70px; position: relative;}
 #icons a{margin: 5px;}
@@ -201,12 +204,13 @@ nav{height: 0;}
     #projects img{height: 250px;}
     .text_box{font-size: 1em;}
     #color_box{right: 3%;}
+    .c{position: relative; top: 0px;}
 
 }
 @media screen and (max-width: 1040px)
 {
     .logo{font-size: 30px;}
-#top p{width: 300px;}
+#top h1{width: 300px;}
 p,a {font-size: 0.75em;}
 #bar{width: 25%;}
 #box{width: 25%;}
@@ -256,7 +260,7 @@ p,a {font-size: 0.75em;}
     #skills{height: 350px;}
     #skills button{font-size: 0.6em;}
     #skills img{height: 35px;}
-    #projects p{font-size:1.5em; padding: 0;}
+    #projects h1{font-size:1.5em; padding: 0;}
     .type3 p{width: 100%;}
     #interests div{width: auto;}
     #contact_box{width: 100%;}
@@ -279,7 +283,7 @@ p,a {font-size: 0.75em;}
     #color_box{width: 60%; margin: 0 10% 0 30%;right: unset; top:370px}
     .work{padding: 15px 0 20px 0;}
     #projects img{ height: auto; width: 300px;}
-    #projects div div{margin: 15px 0 10px 0}
+    #projects div div{margin: 15px 5px 10px 5px}
     #projects div div div{margin: 0;}
 
 }

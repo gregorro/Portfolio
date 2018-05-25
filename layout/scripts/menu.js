@@ -361,7 +361,7 @@ $(document).scroll(function () {
 $('.menu').hover(
     function () {
         if (status == "bottom")
-            $(this).animate({ backgroundColor: 'rgba(245,245,245, 0.9)', fontWeight: 600 }, 200);
+            $(this).animate({ backgroundColor: 'rgba(245,245,245, 0.9)', fontWeight: 600 }, 100);
     },
     function () {
         if (status == "bottom")
