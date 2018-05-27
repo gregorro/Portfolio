@@ -66,7 +66,7 @@ $(document).scroll(anim = function () {
 
     }
 
-    if ($(".p")[0].getBoundingClientRect().top < $(window).height() - 100 && prawda[2] != 1) {
+    if ($("#programowanie")[0].getBoundingClientRect().top < $(window).height() -100 && prawda[2] != 1) {
 
 
         $("#programowanie").animate({
