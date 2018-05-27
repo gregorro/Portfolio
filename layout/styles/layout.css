@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 a,p, h1,h2,h3{color: black; font-family: 'Dosis', sans-serif;}
+button, button a{font-family: sans-serif;}
 html, body, container {margin: 0 auto; width: 100%; overflow-x: hidden; overflow-y: auto; -ms-overflow-style: none; -webkit-overflow-scrolling: unset; }
 a:hover{color: orange;}
 label{display: block;}
@@ -53,6 +54,8 @@ form input[type*="submit"],form input[type*="reset"] {width: auto;}
 #footer{height: 40px; background-color: orange; text-align: center;}
 #footer p{padding: 10px 0 5px 0;margin: 0;}
 #me{position: relative; top: 120px;}
+
+#cv{font-size: 1em;}
 
 #top{position: absolute; top: 200px; margin: 0 auto 0 auto; width: 100%; text-align: center;}
 #top h1{width: 500px; margin: 0 auto 0 auto;}
