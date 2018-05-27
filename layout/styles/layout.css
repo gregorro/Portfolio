@@ -2,7 +2,7 @@
 
 a,p, h1,h2,h3{color: black; font-family: 'Dosis', sans-serif;}
 button, button a{font-family: sans-serif;}
-html, body, container {margin: 0 auto; width: 100%; overflow-x: hidden; overflow-y: auto; -ms-overflow-style: none; -webkit-overflow-scrolling: unset; }
+html, body, container {margin: 0 auto; width: 100%; overflow-x: hidden; overflow-y: auto; -ms-overflow-style: -ms-autohiding-scrollbar ; -webkit-overflow-scrolling: inherit; }
 a:hover{color: orange;}
 label{display: block;}
 .facebook:hover, .facebook2:hover{color:#3b5998 !important;}
