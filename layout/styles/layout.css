@@ -53,7 +53,7 @@ form input[type*="submit"],form input[type*="reset"] {width: auto;}
 
 #footer{height: 40px; background-color: orange; text-align: center;}
 #footer p{padding: 10px 0 5px 0;margin: 0;}
-#me{position: relative; top: 120px;}
+#me{position: relative; top: 180px;}
 
 #cv{font-size: 1em;}
 
@@ -209,6 +209,7 @@ nav{height: 0;}
     .text_box{font-size: 1em;}
     #color_box{right: 3%;}
     .c{position: relative; top: 0px;}
+    #me{top: 150px;}
 
 }
 @media screen and (max-width: 1040px)
