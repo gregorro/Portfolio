@@ -24,8 +24,7 @@ label{display: block;}
 
 
 ul{background-color: rgba(245,245,245, 0.4)}
-#gf{margin: 20px auto 20px auto; display: block;}
-.tel{position: relative; left: -54px;}
+#gf{margin: 20px auto 20px auto; display: block!important;}
 textarea{height: 80px;}
 
 #container{width: 100%; background-color: rgb(207, 207, 207);}
@@ -56,6 +55,9 @@ form input[type*="submit"],form input[type*="reset"] {width: auto;}
 #me{position: relative; top: 180px;}
 
 #cv{font-size: 1em;}
+.information{display: block!important; width: 50%; margin: 0 auto;}
+.information p{ text-align: left!important;}
+.information a{font-size: inherit!important; text-decoration: none;}
 
 
 #top{position: absolute; top: 200px; margin: 0 auto 0 auto; width: 100%; text-align: center;}
@@ -100,7 +102,7 @@ nav{height: 0;}
 
 
 .btn{margin: 10px 5px 0 5px;}
-.btn a{text-decoration: none; color: black; font-size: 1.3em;}
+.btn a{text-decoration: none; color: black; font-size: 16px;}
 
 .type_space{margin: 0 400px 0 400px;}
 .type_space_r{margin-left: 650px;}
@@ -203,7 +205,6 @@ nav{height: 0;}
     #contact_box{width: 50%; }
     #mail_box{width: 50%;}
     .width{ width: auto; max-width: 1200px; min-width: 800px;}
-    form{margin-right: 10px;}
     .menu li{margin: 0 20px;}
     #projects img{height: 250px;}
     .text_box{font-size: 1em;}
@@ -290,6 +291,7 @@ p,a {font-size: 0.75em;}
     #projects img{ height: auto; width: 300px;}
     #projects div div{margin: 15px 5px 10px 5px}
     #projects div div div{margin: 0;}
+    .btn a{font-size: 12px;}
 
 }
 
