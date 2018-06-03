@@ -27,7 +27,7 @@ ul{background-color: rgba(245,245,245, 0.4)}
 #gf{margin: 20px auto 20px auto; display: block!important;}
 textarea{height: 80px;}
 
-#container{width: 100%; background-color: rgb(207, 207, 207);}
+#container{width: 100%; background-color: rgb(207, 207, 207); margin: 0 auto;}
 #mail_box{ width: 600px; margin: 50px 0 0 auto; float: right; z-index: 2; text-align: center; position: relative;}
 form{ text-align: center; background-color: whitesmoke; margin: 50px auto; z-index: 3; padding: 10px 0; box-shadow: 0 0 0px 2px orange;}
 #form{width: 400px;}
