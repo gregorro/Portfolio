@@ -49,23 +49,6 @@ $(document).scroll(anim = function () {
 
     }
 
-    if ($("#projects")[0].getBoundingClientRect().top < $(window).height() - 150 && prawda[1] != 1) {
-
-
-        $(".a").animate({
-            opacity: 1,
-            left: "0",
-        }, 1000);
-
-        $(".b").animate({
-            opacity: 1,
-            left: "0",
-        }, 1000);
-
-        prawda[1] = 1;
-
-    }
-
     if ($("#programowanie")[0].getBoundingClientRect().top < $(window).height() -100 && prawda[2] != 1) {
 
 

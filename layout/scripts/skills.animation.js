@@ -1,10 +1,10 @@
 var tabId = [];
-tabId[0] = document.getElementById("html");
-tabId[1] = document.getElementById("css");
-tabId[2] = document.getElementById("js");
-tabId[3] = document.getElementById("boostrap");
-tabId[4] = document.getElementById("scss");
-tabId[5] = document.getElementById("mysql");
+tabId[0] = document.getElementById("angular");
+tabId[1] = document.getElementById("html");
+tabId[2] = document.getElementById("css");
+tabId[3] = document.getElementById("js");
+tabId[4] = document.getElementById("boostrap");
+tabId[5] = document.getElementById("scss");
 tabId[6] = document.getElementById("php");
 tabId[7] = document.getElementById("cpp");
 
@@ -12,12 +12,12 @@ var tabIdDiv = [];
 var name = ' div';
 
 var change = function () {
-    tabIdDiv[0] = $("#html" + name);
-    tabIdDiv[1] = $("#css" + name);
-    tabIdDiv[2] = $("#js" + name);
-    tabIdDiv[3] = $("#boostrap" + name);
-    tabIdDiv[4] = $("#scss" + name);
-    tabIdDiv[5] = $("#mysql" + name);
+    tabIdDiv[0] = $("#angular" + name);
+    tabIdDiv[1] = $("#html" + name);
+    tabIdDiv[2] = $("#css" + name);
+    tabIdDiv[3] = $("#js" + name);
+    tabIdDiv[4] = $("#boostrap" + name);
+    tabIdDiv[5] = $("#scss" + name);
     tabIdDiv[6] = $("#php" + name);
     tabIdDiv[7] = $("#cpp" + name);
 }
